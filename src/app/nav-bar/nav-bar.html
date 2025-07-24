@@ -1,0 +1,52 @@
+<header class="backdrop-blur-lg fixed top-0 z-50 w-screen">
+  <nav
+    class="container mx-auto px-6 py-4 flex justify-between items-center"
+    [ngClass]="{ 'bg-secondary': showMobileMenu() }"
+  >
+    <a
+      class="text-2xl font-bold text-accent flex items-center cursor-pointer"
+      (click)="selectSection('home')"
+    >
+      MB
+    </a>
+    <div class="hidden md:flex space-x-8 items-center">
+      @for (section of sections; track $index) {
+        <a
+          class="hover:text-accent transition-colors duration-300 cursor-pointer"
+          (click)="selectSection(section)"
+        >
+          {{ section[0].toUpperCase() + section.slice(1) }}
+        </a>
+      }
+    </div>
+    <a
+      href="mailto:martin.tbui@gmail.com"
+      class="hidden md:block border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-primary transition-all duration-300"
+    >
+      Get in Touch
+    </a>
+    <button
+      id="mobile-menu-button"
+      class="md:hidden text-2xl"
+      (click)="toggleMenu()"
+      aria-label="Toggle mobile menu"
+    >
+      <i class="fas" [ngClass]="showMobileMenu() ? 'fa-times' : 'fa-bars'"></i>
+    </button>
+  </nav>
+
+  <div
+    id="mobile-menu"
+    class="md:hidden bg-secondary h-screen"
+    [ngClass]="{ block: showMobileMenu(), hidden: !showMobileMenu() }"
+  >
+    @for (section of sections; track $index) {
+      <a
+        class="block py-2 px-6 hover:bg-primary cursor-pointer"
+        (click)="selectSection(section)"
+      >
+        {{ section[0].toUpperCase() + section.slice(1) }}
+      </a>
+    }
+  </div>
+</header>
