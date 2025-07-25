@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { AfterViewInit, Component, signal } from '@angular/core';
 import { NavBar } from "./nav-bar/nav-bar";
 import { Home } from "./home/home";
 import { Experience } from "./experience/experience";
@@ -13,7 +13,7 @@ import { Footer } from "./footer/footer";
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
+export class App implements AfterViewInit {
   protected readonly title = signal('my-portfolio');
 
   scrollToSection(selectedSection: string): void {
@@ -21,5 +21,9 @@ export class App {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+
+  ngAfterViewInit(): void {
+    
   }
 }
