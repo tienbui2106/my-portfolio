@@ -8,12 +8,6 @@ import { Component, output, signal } from '@angular/core';
   styleUrl: './nav-bar.css'
 })
 export class NavBar {
-  // sections = [
-  //   { name: 'About', href: '#about' },
-  //   { name: 'Skills', href: '#skills' },
-  //   { name: 'Experience', href: '#experience' },
-  //   { name: 'Contact', href: '#contact' }
-  // ];
   sections = [ "about", "skills", "experience", "contact" ];
   showMobileMenu = signal(false);
   sectionSelect = output<string>();

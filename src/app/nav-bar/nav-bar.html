@@ -37,12 +37,16 @@
 
   <div
     id="mobile-menu"
-    class="md:hidden bg-secondary h-screen"
-    [ngClass]="{ block: showMobileMenu(), hidden: !showMobileMenu() }"
+    class="md:hidden bg-secondary rounded-b-3xl pb-5"
+    [ngClass]="{
+      block: showMobileMenu(),
+      hidden: !showMobileMenu(),
+    }"
   >
     @for (section of sections; track $index) {
       <a
-        class="block py-2 px-6 hover:bg-primary cursor-pointer"
+        class="block py-2 px-6 hover:bg-primary cursor-pointer motion-preset-fade motion-preset-slide-down"
+        [style]="{ '--motion-delay': 100 * $index + 'ms' }"
         (click)="selectSection(section)"
       >
         {{ section[0].toUpperCase() + section.slice(1) }}
