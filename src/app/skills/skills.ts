@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './skills.css'
 })
 export class Skills {
-
+  cardAnimationClasses = 'invisible intersect:visible intersect:motion-preset-blur-up-md intersect:motion-duration-800 intersect:motion-ease-out';
 }

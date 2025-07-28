@@ -1,9 +1,16 @@
 <section id="skills" class="py-20 min-h-screen content-center">
-  <h2 class="text-3xl font-bold text-gray-100 mb-8 flex items-center gap-4">
-    <span class="text-accent">02.</span> Technical Skills
+  <h2
+    class="invisible intersect:visible text-3xl font-bold text-gray-100 mb-8 flex items-center gap-4 intersect:motion-preset-fade-lg text-accent intersect:motion-duration-800 intersect:motion-preset-slide-right-lg intersect:motion-ease-out"
+  >
+    Technical Skills
   </h2>
+
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    <div class="bg-secondary p-4 rounded-lg">
+    <!-- Language & Frameworks -->
+    <div
+      class="bg-secondary p-4 rounded-lg hover:-translate-y-2 transition-transform"
+      [class]="cardAnimationClasses"
+    >
       <h3 class="text-lg font-semibold text-gray-100 mb-2">
         Languages & Frameworks
       </h3>
@@ -14,7 +21,13 @@
         <li>Angular, React, Nx</li>
       </ul>
     </div>
-    <div class="bg-secondary p-4 rounded-lg">
+
+    <!-- Mobile Development -->
+    <div
+      class="bg-secondary p-4 rounded-lg hover:-translate-y-2 transition-transform"
+      [class]="cardAnimationClasses"
+      [style]="{ '--motion-delay': '0.1s' }"
+    >
       <h3 class="text-lg font-semibold text-gray-100 mb-2">
         Mobile Development
       </h3>
@@ -23,14 +36,26 @@
         <li>Expo</li>
       </ul>
     </div>
-    <div class="bg-secondary p-4 rounded-lg">
+
+    <!-- Libraries & APIs -->
+    <div
+      class="bg-secondary p-4 rounded-lg hover:-translate-y-2 transition-transform"
+      [class]="cardAnimationClasses"
+      [style]="{ '--motion-delay': '0.2s' }"
+    >
       <h3 class="text-lg font-semibold text-gray-100 mb-2">Libraries & APIs</h3>
       <ul class="space-y-1 text-gray-400">
         <li>Angular Material, RxJS, NgRx</li>
         <li>WebSocket, JWT, Stripe API</li>
       </ul>
     </div>
-    <div class="bg-secondary p-4 rounded-lg">
+
+    <!-- Databases -->
+    <div
+      class="bg-secondary p-4 rounded-lg hover:-translate-y-2 transition-transform"
+      [class]="cardAnimationClasses"
+      [style]="{ '--motion-delay': '0.3s' }"
+    >
       <h3 class="text-lg font-semibold text-gray-100 mb-2">Databases</h3>
       <ul class="space-y-1 text-gray-400">
         <li>MongoDB, Mongoose</li>
@@ -38,7 +63,13 @@
         <li>MySQL</li>
       </ul>
     </div>
-    <div class="bg-secondary p-4 rounded-lg">
+
+    <!-- Cloud & DevOps -->
+    <div
+      class="bg-secondary p-4 rounded-lg hover:-translate-y-2 transition-transform"
+      [class]="cardAnimationClasses"
+      [style]="{ '--motion-delay': '0.4s' }"
+    >
       <h3 class="text-lg font-semibold text-gray-100 mb-2">Cloud & DevOps</h3>
       <ul class="space-y-1 text-gray-400">
         <li>AWS (ECS, ECR, EC2, S3)</li>
@@ -46,7 +77,13 @@
         <li>GitHub Actions (CI/CD)</li>
       </ul>
     </div>
-    <div class="bg-secondary p-4 rounded-lg">
+
+    <!-- Testing & Tools -->
+    <div
+      class="bg-secondary p-4 rounded-lg hover:-translate-y-2 transition-transform"
+      [class]="cardAnimationClasses"
+      [style]="{ '--motion-delay': '0.5s' }"
+    >
       <h3 class="text-lg font-semibold text-gray-100 mb-2">Testing & Tools</h3>
       <ul class="space-y-1 text-gray-400">
         <li>Jasmine, Karma, Jest</li>

@@ -3,6 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#121212",
+        secondary: "#242424",
+        "accent-1": "#3ecf8e",
+        "accent-2": "#006239",
+        "text-primary": "#fafafa",
+      },
       animation: {
         typewriter:
           "typing 1.5s steps(10) var(--animation-delay) forwards, blink-cursor 0.4s step-end infinite alternate",

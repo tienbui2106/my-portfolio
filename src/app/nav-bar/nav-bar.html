@@ -1,4 +1,4 @@
-<header class="backdrop-blur-lg fixed top-0 z-50 w-screen">
+<header class="backdrop-blur-lg fixed top-0 z-50 w-screen motion-preset-blur-down-lg">
   <nav
     class="container mx-auto px-6 py-4 flex justify-between items-center"
     [ngClass]="{ 'bg-secondary': showMobileMenu() }"
@@ -12,7 +12,7 @@
     <div class="hidden md:flex space-x-8 items-center">
       @for (section of sections; track $index) {
         <a
-          class="hover:text-accent transition-colors duration-300 cursor-pointer"
+          class="hover:text-accent transition-colors duration-300 cursor-pointer font-bold"
           (click)="selectSection(section)"
         >
           {{ section[0].toUpperCase() + section.slice(1) }}
@@ -21,7 +21,7 @@
     </div>
     <a
       href="mailto:martin.tbui@gmail.com"
-      class="hidden md:block border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-primary transition-all duration-300"
+      class="hidden md:block border border-accent text-accent px-4 py-2 rounded-md hover:bg-accent hover:text-text-primary transition-all duration-300"
     >
       Get in Touch
     </a>
