@@ -8,9 +8,9 @@
   <div class="space-y-12">
     <!-- Project 1: Cspire -->
     <div
-      class="bg-secondary p-8 rounded-lg flex flex-row invisible intersect:visible intersect:motion-preset-blur-up-md"
+      class="bg-secondary p-8 rounded-lg flex flex-col md:flex-row invisible intersect:visible intersect:motion-preset-blur-up-md gap-3"
     >
-      <div class="w-1/2 pr-6">
+      <div class="md:w-1/2">
         <h3 class="text-2xl font-bold text-accent">
           Phones & Devices E-Commerce Platform
         </h3>
@@ -55,17 +55,14 @@
           >
         </div>
       </div>
-      <app-carousel
-        class="w-1/2 invisible intersect:visible"
-        [media]="cspireMedia"
-      ></app-carousel>
+      <app-carousel class="md:w-1/2" [media]="cspireMedia"></app-carousel>
     </div>
 
     <!-- Project 2: Troy University -->
     <div
-      class="bg-secondary p-8 rounded-lg flex flex-row invisible intersect:visible intersect:motion-preset-blur-up-md"
+      class="bg-secondary p-8 rounded-lg flex flex-col md:flex-row invisible intersect:visible intersect:motion-preset-blur-up-md gap-3"
     >
-      <div class="w-1/2 pr-6">
+      <div class="md:w-1/2">
         <h3 class="text-2xl font-bold text-accent">Shuttle Booking System</h3>
         <p class="text-gray-400 font-mono">Jan 2022 - June 2023</p>
         <h4 class="text-xl font-semibold text-gray-200 mb-4">
@@ -106,14 +103,14 @@
           >
         </div>
       </div>
-      <app-carousel class="w-1/2" [media]="troyMedia"></app-carousel>
+      <app-carousel class="md:w-1/2" [media]="troyMedia"></app-carousel>
     </div>
 
     <!-- Project 3: Shopee Food -->
     <div
-      class="bg-secondary p-8 rounded-lg flex flex-row invisible intersect:visible intersect:motion-preset-blur-up-md"
+      class="bg-secondary p-8 rounded-lg flex flex-col md:flex-row invisible intersect:visible intersect:motion-preset-blur-up-md gap-3"
     >
-      <div class="w-1/2 pr-6">
+      <div class="md:w-1/2">
         <h3 class="text-2xl font-bold text-accent">
           Internal Operations Platform
         </h3>
@@ -152,7 +149,7 @@
           >
         </div>
       </div>
-      <app-carousel class="w-1/2" [media]="shopeeMedia"></app-carousel>
+      <app-carousel class="md:w-1/2" [media]="shopeeMedia"></app-carousel>
     </div>
   </div>
 </section>
