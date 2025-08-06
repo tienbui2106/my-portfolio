@@ -15,7 +15,16 @@
 }
 
 body {
+  background-image: url('/assets/background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Inter', sans-serif;
+}
+
+p {
+  @apply text-justify indent-10;
 }
 
 .bg-primary {

@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, signal } from '@angular/core';
-import { NavBar } from './nav-bar/nav-bar';
+import { NavBar } from './components/nav-bar/nav-bar';
 import { Home } from './home/home';
 import { Experience } from './experience/experience';
 import { Contact } from './contact/contact';
 import { About } from './about/about';
 import { Skills } from './skills/skills';
-import { Footer } from './footer/footer';
+import { Footer } from './components/footer/footer';
 import { Observer } from 'tailwindcss-intersect';
 
 @Component({

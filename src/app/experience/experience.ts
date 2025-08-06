@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Carousel } from '../carousel/carousel';
-import { MediaItem } from '../carousel/carousel';
+import { Carousel } from '../components/carousel/carousel';
+import { MediaItem } from '../components/carousel/carousel';
 
 @Component({
   selector: 'app-experience',
