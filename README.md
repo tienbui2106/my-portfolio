@@ -95,13 +95,11 @@ The build artifacts will be stored in the `dist/` directory.
 ```
 src/
 ├── app/
+│   ├── components/     # Reusable UI components
 │   ├── about/          # About section component
-│   ├── carousel/       # Image carousel component
 │   ├── contact/        # Contact section component
 │   ├── experience/     # Professional experience showcase
-│   ├── footer/         # Footer component
 │   ├── home/           # Landing/hero section
-│   ├── nav-bar/        # Navigation component
 │   └── skills/         # Technical skills display
 ├── assets/             # Static assets and project images
 └── styles.css          # Global styles and TailwindCSS imports
