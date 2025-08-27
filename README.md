@@ -1,6 +1,6 @@
 # 🚀 Martin Bui's Portfolio
 
-> A modern, responsive portfolio website showcasing 6+ years of full-stack development experience
+> A modern, responsive portfolio website showcasing my full-stack development experience
 
 [![Angular](https://img.shields.io/badge/Angular-20.1.0-red?style=flat-square&logo=angular)](https://angular.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
@@ -108,13 +108,6 @@ src/
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Connect
-
-- **Portfolio**: [Live Demo](https://tienbui2106.github.io/my-portfolio/)
-- **GitHub**: [@tienbui2106](https://github.com/tienbui2106)
-- **LinkedIn**: [Martin Bui](https://www.linkedin.com/in/martin-bui-815a9a378/)
-- **Email**: martin.tbui@gmail.com
 
 ---
 
